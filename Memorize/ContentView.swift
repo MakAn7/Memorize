@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         HStack(spacing: 20) {
             ForEach(0..<4) {_ in
-                CardView(isFaceUp: <#Bool#>)
+                CardView(isFaceUp: true)
             }
         }
         .foregroundColor(.orange)
@@ -20,7 +20,7 @@ struct ContentView: View {
     }
 
     struct CardView: View {
-        var isFaceUp: Bool 
+        var isFaceUp: Bool
         var body: some View {
             ZStack {
                 if isFaceUp {
